@@ -1,0 +1,237 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    border: border-box;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+nav {
+    height: 5vw;
+    width:100%;
+    background-color:#3876BF;
+    border-bottom:1px solid #dadada;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav #icon {
+    height: 4vw;
+    padding-left: 3vw;
+}
+
+nav #title {
+    font-size: 3.5vw;
+    color:#F3F0CA;
+    font-family: serif
+}
+
+nav #navpannel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbutton {
+    font-size: 1.5vw;
+    padding: 0.5vw 1.8vw;
+    margin:2vw;
+    background-color: #001B79;
+    color: white;
+}
+
+#intro {
+    height:3vw;
+    width:50vw;
+    padding-top: 0.8vw;
+    width:auto;
+    text-align: center;
+    background-color: #001a79d5;
+    color: #F3F0CA;
+    font-size:2vw;
+    letter-spacing:0.5vw;
+}
+
+@media (min-width:600px) {
+    video {
+        width:50vw;
+    }
+    #animation {
+        display: flex;
+        background-color:#001a79d5;
+    }
+    
+    .facility p {
+        height:1.5vw;
+        width:50vw;
+        padding-top: 0.4vw;
+        width:auto;
+        text-align: center;
+        background-color: #001a79d5;
+        color: #F3F0CA;
+        font-size:1vw;
+        letter-spacing:0.25vw;
+    }
+}
+
+body {
+    background-image: url(hospital_1.avif);
+    background-size: cover;             
+}
+
+#hms {
+    height:3vw;
+    padding-top: 0.6vw;
+    width:auto;
+    text-align: center;
+    background-color: #001a79d5;
+    color: #F3F0CA;
+    font-size:2vw;
+    letter-spacing:0.3vw;
+}
+
+#hms b {
+    font-family: serif;
+}
+
+.sec1 {
+    height:18vw;
+    width:auto;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sec1 img {
+    height: 14vw;
+    width:14vw;
+}
+
+.entry {
+    height: 2.5vw;
+    width:auto;
+    background-color: #001a79dd;
+    color: white;
+    border-radius: 1vw;
+    font-size: 1.8vw;
+}
+
+.sec1 a:hover {
+    border: 1px solid transparent;
+    background-color: #B4BDFF;
+    border-radius: 0.5vw;
+    transition: all 0.4s ease-in-out 0s;
+}
+#footer1 {
+    height:3vw;
+    width: auto;
+    background-color: lightblue;
+    font-size:2vw;
+    color: #1d3557;
+    padding-top: 0.2vw;
+
+}
+
+#footer2 {
+    background-color:#3876BF;
+    width:auto;
+    height: 5vw;
+    font-size:2vw;
+    text-align: center;
+    font-family: serif;
+}
+
+#copyright {
+    padding-top: 1.5vw;
+}
+
+
+@media (max-width:600px) {
+    nav {
+        height: 7vw
+    }
+
+    nav #icon {
+        margin-top: 1vw;
+        height: 5vw;
+    }
+
+    nav #title {
+        font-size: 3.5vw;
+        color:#F3F0CA;
+        font-family: serif
+    }
+
+    body {
+        /* background-image: url(output-onlinepngtools.png); */
+        /* background-color: crimson; */
+    } 
+    video {
+        width:100vw;
+    }
+    #animation {
+        background-color:#001a79d5;
+    }
+    .facility p {
+        height:1.5vw;
+        width:100vw;
+        padding-top: 0.4vw;
+        width:auto;
+        text-align: center;
+        background-color: #001a79d5;
+        color: #F3F0CA;
+        font-size:1vw;
+        letter-spacing:0.25vw;
+    }
+    .sec1 {
+        height:30vw;
+        width:auto;
+        margin-top: 8vw;
+        margin-bottom: 12vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .sec1 img {
+        height: 23vw;
+        width:23vw;
+    }
+    
+    .entry {
+        height: 2.5vw;
+        width:auto;
+        background-color: #001a79dd;
+        color: white;
+        border-radius: 1vw;
+    }
+    
+    .sec1 a:hover {
+        background-color: transparent;
+    }
+
+    #imagesec {
+        display:block;
+        height:calc(45vh + 3vw);
+        background-color: red;
+    }
+
+    iframe {
+        width:100vw;
+        /* height: 45vh; */
+    }
+
+    #footer1 {
+        height:6vw;
+        padding-top: 0.4vw;
+        font-size: 4vw;
+    }
+    
+    #footer2 {
+        height: 9vw;
+    }
+}

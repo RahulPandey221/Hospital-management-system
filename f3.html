@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+    margin: 0%;
+    padding: 0%;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+body {
+    background-image: url(luxa.org-opacity-changed-pexels-karolina-grabowska-4386466\ \(1\).jpg);
+    background-size: cover;             
+}
+
+nav {
+    height: 5vw;
+    width:100%;
+    background-color:#3876BF;
+    border-bottom:1px solid #dadada;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav #icon {
+    height: 4vw;
+    padding-left: 3vw;
+}
+
+nav #title {
+    font-size: 3.5vw;
+    color:#F3F0CA;
+    font-family: serif
+}
+
+nav #navpannel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbutton {
+    font-size: 1.5vw;
+    padding: 0.3vw 1.2vw;
+    margin:2vw;
+    background-color: #001B79;
+    color: white;
+}
+
+main {
+        height: calc(100vh - 13vw);
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+#border {
+    height: 20vw;
+    width:45vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    align-self: center;
+    border-radius: 0.5vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+    background-color: #ffffffb0;
+}
+
+#border p {
+    text-align: center;
+    font-size:2.5vw;
+}
+
+form {
+    font-size: 1.5vw;
+    margin-left: 3vw;
+}
+
+form div {
+    margin-top: 1vw;
+}
+
+.input {
+    height: 2.5vw;
+    width: 38vw;
+    /* border-radius: 0%; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input1 {
+    width:38vw;
+}
+
+#submit {
+    height: 3vw;
+    width: 38vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:black;
+    color: aliceblue;
+    font-size: 2vw;
+    /* border-radius: 0.5vw; */
+    transition: all 0.4s ease-in-out; 
+}
+
+#submit:hover {
+    background-color: #a2d711;
+}
+#footer1 {
+    height:3vw;
+    width: auto;
+    background-color: lightblue;
+    font-size:2vw;
+    color: #1d3557;
+    padding-top: 5px;
+
+}
+
+#footer2 {
+    background-color:#3876BF;
+    width:auto;
+    height: 5vw;
+    font-size:2vw;
+    text-align: center;
+    font-family: serif;
+}
+
+#copyright {
+    padding-top: 1.5vw;
+}
+
+
+@media (max-width:600px) {
+
+    header {
+        /* display: none; */
+    }
+    nav {
+        height: 7vw
+    }
+
+    nav #icon {
+        margin-top: 1vw;
+        height: 5vw;
+    }
+
+    nav #title {
+        font-size: 3.5vw;
+        color:#F3F0CA;
+        font-family: serif
+    }
+
+
+    body {
+        /* background-image: url(output-onlinepngtools.png); */
+    }  
+    main {
+        height: calc(100vh - 13vw);
+        width: 100vw;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    #border {
+    height: 28vh;
+    width:90vw;
+    border-radius: 1vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffffb0;
+    }
+
+    #border p {
+        text-align: center;
+        font-size:3vh;
+    }
+
+    form {
+        font-size: 2.2vh;
+        margin-left: 7vw;
+    }
+
+    form div {
+        margin-top: 2vh;
+    }
+
+    .input {
+        height: 3vh;
+        width: 75vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .input1 {
+        width:75vw;
+    }
+
+    .input2 {
+        width:75vw;
+    }
+
+    #submit {
+        height: 3vh;
+        width: 75vw;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:black;
+        color: aliceblue;
+        font-size: 3vw;
+        border-radius: 0.8vw;
+        transition: all 0.4s ease-in-out; 
+    }
+
+    #submit:hover {
+        background-color: #3876BF;
+    }
+    footer {
+        /* display:none */
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="logo">
+                <img id="icon" src="medical-team.png">
+            </div>
+            <div id="title">
+                HOSPITAL MANAGEMENT SYSTEM
+            </div>
+            <div id="navpannel">
+                <a href="index.html"><input type="button" class="navbutton" value="Home"></a>
+                <a href="login.html"><input type="button" class="navbutton" value="Login"></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="border">
+            <form>
+                <p><b>Staff Information</b></p>
+                <div>
+                    <label for="name">Staff Name</label><br>
+                    <input type="text" id="name" class="input" name="name" placeholder="Enter Staff Name" required>
+                </div> 
+                <div>
+                    <label for="staff-id">Staff ID</label><br>
+                    <input type="text" id="staff-id" class="input" name="staff-id" placeholder="Enter Staff ID" required>
+                </div>
+                <div>
+                    <input type="submit" class="input" id="submit">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <a href="#nav"><div id="footer1"><b>Back To Top</b></div></a>
+        <div id="footer2"><div id="copyright"><i class="fa-regular fa-copyright"></i>&nbsp;All copyrights reserved to Hospital Management System</div></div>
+    </footer>
+</body>
+</html>

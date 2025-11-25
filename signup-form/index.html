@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            margin-top: 10vh;
+        }
+        form{
+            height: 35vh;
+            width:30vw;
+            background-color: #dadada;
+        }
+        form p {
+            text-align: center;
+            font-size: 2vw;
+            color: ;
+        }
+        form div {
+            margin-left: 2vw; 
+            font-size: 1.3vw;
+        }
+        .input{
+            margin:0.5vw 0;
+            height: 4vh;
+            width: 26vw;
+        }
+        button {
+            font-size: 1.5vw;
+            background-color: rgb(255, 111, 0);
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <p><b>Login-Form</b></p><br>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" class="input" placeholder="Enter Your Email" required>
+        </div>
+        <div>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" class="input" placeholder="Enter Your Password" required>
+        </div>
+        <div>
+            <button type="submit" class="input">submit</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="logo">
+                <img id="icon" src="medical-team.png">
+            </div>
+            <div id="title">
+                HOSPITAL MANAGEMENT SYSTEM
+            </div>
+            <div id="navpannel">
+                <a href="#nav"><input type="button" class="navbutton" value="Home"></a>
+                <a href="login.html"><input type="button" class="navbutton" value="Login"></a>
+                <!-- <a href="login.html"><input type="button" class="navbutton" value="Logout"></a> -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id ="intro">HOSPITAL - FACILITIES</div>
+        <div id="animation">
+            <div class="facility">
+                <p>INTRO</p>
+                <video controls loop autoplay muted>
+                <source src="intro.mp4">
+                </video>
+            </div>
+            <div class="facility">
+                <p>FACILITIES</p>
+                <video controls loop autoplay muted>
+                <source src="facilities.mp4">
+                </video>
+            </div>
+        </div>
+        <section id="section1">
+            <div id="hms"><b>SERVICES</b></div>
+            <div id="mainsec">
+                <div class="sec1">
+                        <a href="f1.html"><div class="image"><img src="health-insurance.png"><div class="entry">Patient's Entry</div></div></a>
+                        <a href="f2.html"><div class="image"><img src="patient.png"><div class="entry">Patient's Details</div></div></a>
+                        <a href="f3.html"><div class="image"><img src="staff.png" ><div class="entry">Staff-Information</div></div></a>
+                </div>
+                <div class="sec1">
+                        <a href="f4.html"><div class="image"><img src="blood-bank.png"><div class="entry">Blood-Bank</div></div></a>
+                        <a href="f5.html"><div class="image"><img src="bill.png"><div class="entry">Billing</div></div></a>
+                        <a href="f6.html"><div class="image"><img src="microscope.png"><div class="entry">Pathology</div></div></a>
+                </div>
+            </div>
+    </section>
+    </main>
+    <footer>
+        <a href="#nav"><div id="footer1"><b>Back To Top</b></div></a>
+        <div id="footer2"><div id="copyright"><i class="fa-regular fa-copyright"></i>&nbsp;All copyrights reserved to Hospital Management System</div></div>
+    </footer>
+</body>
+</html>
